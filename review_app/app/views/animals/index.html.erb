@@ -1,0 +1,20 @@
+<h1>Zoo Animals</h1>
+
+
+<% @animals.each do |x| %>
+	<div>
+	        <div> <%= x.nickname %> </div> 
+	        <div> <%= x.status %> </div> 
+	        <div>
+	            Name: <%= x.name %>, Species <%= x.species %>
+	        </div>
+	        <div>
+	            Description:
+
+	                <p>
+	                    <%= x.description %>
+	                </p>
+	        </div>
+
+	 </div>
+ <% end %>

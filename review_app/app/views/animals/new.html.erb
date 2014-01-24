@@ -1,0 +1,13 @@
+<%= form_for @animal do |f| %>
+	<%= f.text_field :name, placeholder: "Enter Name" %> <br>
+    <%= f.text_field :species, placeholder: "Enter Species" %> <br>
+    <%= f.text_field :nickname, placeholder: "Enter Nickname" %> <br>
+    <%= f.text_field :age, placeholder: "Enter Age" %> <br>
+    <div>
+    	On Display: <%= f.radio_button :status, "Display" %><br>
+    	On Vacation: <%= f.radio_button :status, "Vacation" %><br>
+    	On Lease: <%= f.radio_button :status, "Lease" %>
+    </div>
+    <%= f.text_area :description, placeholder: "Enter Description" %><br>
+    <%= f.submit "Save", class: "btn btn-primary" %>
+<% end %>
